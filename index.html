@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tide & Grind: A curated exhibition of high-end coffee brewing tools. Precision is not rushed."
+    />
+    <title>Tide & Grind | Precision is not rushed.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- 1) HEADER -->
+    <header class="site-header" role="banner">
+      <a href="#" class="logo-mark" aria-label="Tide and Grind Home"
+        >Tide & Grind</a
+      >
+
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#collection" class="nav-link">Collection</a></li>
+          <li><a href="#materials" class="nav-link">Materials</a></li>
+          <li><a href="#ritual" class="nav-link">Ritual</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button
+        class="mobile-nav-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+    </header>
+
+    <main id="main-content">
+      <!-- 2) HERO -->
+      <section class="hero-section" aria-label="Hero">
+        <div class="hero-content">
+          <h1 class="hero-statement">Precision is not rushed.</h1>
+          <p class="hero-subtext">Tools for the ritual of extraction.</p>
+        </div>
+
+        <div class="scroll-indicator" aria-hidden="true">
+          <span class="scroll-text">Scroll</span>
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <!-- 3) COLLECTION -->
+      <div class="product-collection" id="collection">
+        <!-- A) PRESSURE: Mariner 9 -->
+        <section class="product-feature" data-product="mariner-9" data-reveal>
+          <div class="product-info">
+            <span class="product-theme">Pressure</span>
+            <h2 class="product-name">Mariner 9</h2>
+            <h3 class="product-type">Espresso Machine</h3>
+            <p class="product-poetic">
+              A vessel built to withstand the crushing weight of the deep.
+            </p>
+
+            <ul class="product-specs">
+              <li>9-bar steady state extraction</li>
+              <li>Saturated grouphead architecture</li>
+              <li>Silent rotary pump assembly</li>
+            </ul>
+
+            <a href="#details-mariner-9" class="view-details-link"
+              >View details</a
+            >
+          </div>
+
+          <div class="product-visuals">
+            <figure class="hero-image-wrapper">
+              <img
+                src="assets/products/mariner-9-hero.png"
+                alt="Mariner 9 espresso machine side profile in matte steel"
+                class="product-hero-img"
+              />
+              <div class="pressure-visual" aria-hidden="true">
+                  <div class="pressure-fill"></div>
+              </div>
+            </figure>
+            <div class="macro-grid">
+              <img
+                src="assets/products/mariner-9-macro-1.png"
+                alt="Close up of Mariner 9 steam knob texture"
+                class="macro-img"
+              />
+              <img
+                src="assets/products/mariner-9-macro-2.png"
+                alt="Macro shot of the portafilter locking mechanism"
+                class="macro-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- B) GRAIN: Stonewave -->
+        <section class="product-feature" data-product="stonewave" data-reveal>
+          <div class="product-info">
+            <span class="product-theme">Grain</span>
+            <h2 class="product-name">Stonewave</h2>
+            <h3 class="product-type">Grinder</h3>
+            <p class="product-poetic">
+              Erosion is nature’s way of revealing truth; we just sped it up.
+            </p>
+
+            <ul class="product-specs">
+              <li>83mm DLC flat burrs</li>
+              <li>Variable RPM (300-1400)</li>
+              <li>Zero-retention vertical chamber</li>
+            </ul>
+
+            <a href="#details-stonewave" class="view-details-link"
+              >View details</a
+            >
+          </div>
+
+          <div class="product-visuals">
+            <figure class="hero-image-wrapper">
+              <img
+                src="assets/products/stonewave-hero.png"
+                alt="Stonewave grinder silhouette against dark background"
+                class="product-hero-img"
+              />
+              <div class="burr-overlay" aria-hidden="true">
+                <svg viewBox="0 0 200 200" class="burr-svg">
+                  <!-- Abstract Burr Geometry: Concentric toothed rings -->
+                  <circle cx="100" cy="100" r="80" class="burr-ring ring-1" /> <!-- Outer -->
+                  <circle cx="100" cy="100" r="55" class="burr-ring ring-2" /> <!-- Mid -->
+                  <circle cx="100" cy="100" r="30" class="burr-ring ring-3" /> <!-- Inner -->
+                  <!-- Crosshairs for technical feel -->
+                  <line x1="20" y1="100" x2="180" y2="100" class="burr-line axis-x" />
+                  <line x1="100" y1="20" x2="100" y2="180" class="burr-line axis-y" />
+                </svg>
+              </div>
+            </figure>
+            <div class="macro-grid">
+              <img
+                src="assets/products/stonewave-macro-1.png"
+                alt="Detail of the grind adjustment dial"
+                class="macro-img"
+              />
+              <img
+                src="assets/products/stonewave-macro-2.png"
+                alt="Macro view of the magnetic dosing cup"
+                class="macro-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- C) TEMPERATURE: Low Tide -->
+        <section class="product-feature" data-product="low-tide" data-reveal>
+          <div class="product-info">
+            <span class="product-theme">Temperature</span>
+            <h2 class="product-name">Low Tide</h2>
+            <h3 class="product-type">Kettle</h3>
+            <p class="product-poetic">
+              The calm point between a simmer and a boil.
+            </p>
+
+            <ul class="product-specs">
+              <li>PID control to 1°F accuracy</li>
+              <li>Gooseneck flow restrictor</li>
+              <li>Cool-touch counterweight handle</li>
+            </ul>
+
+            <a href="#details-low-tide" class="view-details-link"
+              >View details</a
+            >
+          </div>
+
+          <div class="product-visuals">
+            <figure class="hero-image-wrapper">
+              <img
+                src="assets/products/low-tide-hero.png"
+                alt="Low Tide kettle pouring water"
+                class="product-hero-img"
+              />
+              <div class="heat-haze" aria-hidden="true"></div>
+            </figure>
+            <div class="macro-grid">
+              <img
+                src="assets/products/low-tide-macro-1.png"
+                alt="Close up of the digital temperature display base"
+                class="macro-img"
+              />
+              <img
+                src="assets/products/low-tide-macro-2.svg"
+                alt="Macro of the spout precision tip"
+                class="macro-img"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- D) BALANCE: Zero Point -->
+        <section class="product-feature" data-product="zero-point" data-reveal>
+          <div class="product-info">
+            <span class="product-theme">Balance</span>
+            <h2 class="product-name">Zero Point</h2>
+            <h3 class="product-type">Scale</h3>
+            <p class="product-poetic">
+              Equilibrium found in the smallest measure.
+            </p>
+
+            <ul class="product-specs">
+              <li>0.1g fast response sensor</li>
+              <li>Auto-tare & timer modes</li>
+              <li>Water-resistant unibody housing</li>
+            </ul>
+
+            <a href="#details-zero-point" class="view-details-link"
+              >View details</a
+            >
+          </div>
+
+          <div class="product-visuals">
+            <figure class="hero-image-wrapper">
+              <img
+                src="assets/products/zero-point-hero.png"
+                alt="Zero Point scale top down view"
+                class="product-hero-img"
+              />
+            </figure>
+            <div class="macro-grid">
+              <img
+                src="assets/products/zero-point-macro-1.svg"
+                alt="Detail of the minimalist LED display"
+                class="macro-img"
+              />
+              <img
+                src="assets/products/zero-point-macro-2.svg"
+                alt="Side profile showing thinness of the scale"
+                class="macro-img"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- 4) MATERIAL STUDY -->
+      <section
+        class="material-study"
+        id="materials"
+        aria-labelledby="material-heading"
+      >
+        <h2 id="material-heading" class="section-title visually-hidden">
+          Material Study
+        </h2>
+
+        <div class="material-grid">
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-1.png"
+              alt="Close up texture of brushed stainless steel"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Cold-rolled brushed steel chassis.
+            </figcaption>
+          </figure>
+
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-2.png"
+              alt="Diamond pattern texture on metal"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Diamond-pattern knurling for tactile grip.
+            </figcaption>
+          </figure>
+
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-3.png"
+              alt="Black silicone rubber texture"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Industrial silicone gasket, heat resistant.
+            </figcaption>
+          </figure>
+
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-4.png"
+              alt="Smooth chrome metal pipe joint"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Double-walled steam wand assembly.
+            </figcaption>
+          </figure>
+
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-5.png"
+              alt="Golden titanium coating on sharp metal edges"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Titanium-nitride coated burr geometry.
+            </figcaption>
+          </figure>
+
+          <figure class="material-card">
+            <img
+              src="assets/materials/material-6.png"
+              alt="Thick metal block cross section"
+              class="material-img"
+            />
+            <figcaption class="material-caption">
+              Saturated brass mass for thermal stability.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 5) THE RITUAL -->
+      <section
+        class="ritual-sequence"
+        id="ritual"
+        aria-labelledby="ritual-heading"
+      >
+        <h2 id="ritual-heading" class="section-title">The Ritual</h2>
+
+        <div class="steps-container">
+          <article class="ritual-step">
+            <span class="step-number">01</span>
+            <h3 class="step-title">Measure</h3>
+            <p class="step-desc">
+              Precision begins before the grind. Weighing input sets the stage
+              for output.
+            </p>
+            <div class="step-icon-placeholder" aria-hidden="true"></div>
+          </article>
+
+          <article class="ritual-step">
+            <span class="step-number">02</span>
+            <h3 class="step-title">Grind</h3>
+            <p class="step-desc">
+              Breaking the bean to release the ghost. Uniformity ensures
+              clarity.
+            </p>
+            <div class="step-icon-placeholder" aria-hidden="true"></div>
+          </article>
+
+          <article class="ritual-step">
+            <span class="step-number">03</span>
+            <h3 class="step-title">Heat</h3>
+            <p class="step-desc">
+              Energy transfer at the perfect rate. Water must be willing, not
+              forced.
+            </p>
+            <div class="step-icon-placeholder" aria-hidden="true"></div>
+          </article>
+
+          <article class="ritual-step">
+            <span class="step-number">04</span>
+            <h3 class="step-title">Extract</h3>
+            <p class="step-desc">
+              The final transmutation of water to gold. Solubles surrender to
+              pressure.
+            </p>
+            <div class="step-icon-placeholder" aria-hidden="true"></div>
+          </article>
+        </div>
+
+        <p class="ritual-closing">Tools should disappear in use.</p>
+      </section>
+
+      <!-- 6) DETAILS -->
+      <section class="product-details-container">
+        <!-- Mariner 9 Details -->
+        <article id="details-mariner-9" class="product-deep-dive">
+          <div class="detail-header">
+            <h2 class="detail-title">Mariner 9 — Specifications</h2>
+            <p class="detail-intent">
+              Designed for the silent morning. The Mariner 9 hides its
+              complexity behind a monolithic steel face, ensuring that the
+              machine never interrupts the peace of the ritual.
+            </p>
+          </div>
+
+          <div class="detail-content">
+            <dl class="spec-list">
+              <dt>Material</dt>
+              <dd>316L Surgical Stainless Steel</dd>
+              <dt>Finish</dt>
+              <dd>Matte Beadblast</dd>
+              <dt>Tolerance</dt>
+              <dd>0.01mm Machining</dd>
+              <dt>Heat</dt>
+              <dd>Dual Boiler PID System</dd>
+              <dt>Sound</dt>
+              <dd>&lt;40dB Operational</dd>
+              <dt>Care</dt>
+              <dd>Backflush Weekly</dd>
+            </dl>
+
+            <div class="detail-gallery">
+              <img
+                src="assets/products/mariner-9-detail-1.png"
+                alt="Mariner 9 drip tray grid pattern"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/mariner-9-detail-2.png"
+                alt="Mariner 9 internal pump view"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/mariner-9-detail-3.png"
+                alt="Mariner 9 paddle actuator"
+                class="detail-img"
+              />
+            </div>
+          </div>
+
+          <a href="#collection" class="back-link">← Back to collection</a>
+        </article>
+
+        <!-- Stonewave Details -->
+        <article id="details-stonewave" class="product-deep-dive">
+          <div class="detail-header">
+            <h2 class="detail-title">Stonewave — Specifications</h2>
+            <p class="detail-intent">
+              Vertical burr alignment ensures gravity does the work, not the
+              motor. The result is a fluffy, clumpless mound of coffee that
+              requires no redistribution tools.
+            </p>
+          </div>
+
+          <div class="detail-content">
+            <dl class="spec-list">
+              <dt>Material</dt>
+              <dd>Anodized Aluminum Body</dd>
+              <dt>Finish</dt>
+              <dd>Slate Grey</dd>
+              <dt>Tolerance</dt>
+              <dd>Micron-step Adjustment</dd>
+              <dt>Heat</dt>
+              <dd>Active Air Cooling</dd>
+              <dt>Sound</dt>
+              <dd>Low Frequency Hum</dd>
+              <dt>Care</dt>
+              <dd>Brush Burr Chamber Daily</dd>
+            </dl>
+
+            <div class="detail-gallery">
+              <img
+                src="assets/products/stonewave-detail-1.png"
+                alt="Stonewave hopper lid detail"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/stonewave-detail-2.png"
+                alt="Stonewave power switch mechanism"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/stonewave-detail-3.png"
+                alt="Stonewave grounds bin"
+                class="detail-img"
+              />
+            </div>
+          </div>
+
+          <a href="#collection" class="back-link">← Back to collection</a>
+        </article>
+
+        <!-- Low Tide Details -->
+        <article id="details-low-tide" class="product-deep-dive">
+          <div class="detail-header">
+            <h2 class="detail-title">Low Tide — Specifications</h2>
+            <p class="detail-intent">
+              Balanced specifically for a slow, vertical pour without wrist
+              strain. The handle geometry shifts the center of gravity closer to
+              the hand as the water level drops.
+            </p>
+          </div>
+
+          <div class="detail-content">
+            <dl class="spec-list">
+              <dt>Material</dt>
+              <dd>Copper Core, Steel Shell</dd>
+              <dt>Finish</dt>
+              <dd>PVD Black Coat</dd>
+              <dt>Tolerance</dt>
+              <dd>Laser Welded Spout</dd>
+              <dt>Heat</dt>
+              <dd>1200W Rapid Element</dd>
+              <dt>Sound</dt>
+              <dd>Silent Boil Technology</dd>
+              <dt>Care</dt>
+              <dd>Descale Monthly</dd>
+            </dl>
+
+            <div class="detail-gallery">
+              <img
+                src="assets/products/low-tide-detail-1.svg"
+                alt="Low Tide base connector"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/low-tide-detail-2.svg"
+                alt="Low Tide handle wood grain"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/low-tide-detail-3.svg"
+                alt="Low Tide vent holes"
+                class="detail-img"
+              />
+            </div>
+          </div>
+
+          <a href="#collection" class="back-link">← Back to collection</a>
+        </article>
+
+        <!-- Zero Point Details -->
+        <article id="details-zero-point" class="product-deep-dive">
+          <div class="detail-header">
+            <h2 class="detail-title">Zero Point — Specifications</h2>
+            <p class="detail-intent">
+              A scale that reacts as fast as gravity pulls. Stripped of all
+              non-essential buttons, it wakes with a touch and sleeps when the
+              ritual is complete.
+            </p>
+          </div>
+
+          <div class="detail-content">
+            <dl class="spec-list">
+              <dt>Material</dt>
+              <dd>Tempered High-Strength Glass</dd>
+              <dt>Finish</dt>
+              <dd>Anti-glare Etch</dd>
+              <dt>Tolerance</dt>
+              <dd>+/- 0.05g Accuracy</dd>
+              <dt>Heat</dt>
+              <dd>Insulating Silicone Pad</dd>
+              <dt>Sound</dt>
+              <dd>Mute / Haptic Feedback</dd>
+              <dt>Care</dt>
+              <dd>Wipe with Damp Cloth</dd>
+            </dl>
+
+            <div class="detail-gallery">
+              <img
+                src="assets/products/zero-point-detail-1.svg"
+                alt="Zero Point charging port"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/zero-point-detail-2.svg"
+                alt="Zero Point display active"
+                class="detail-img"
+              />
+              <img
+                src="assets/products/zero-point-detail-3.svg"
+                alt="Zero Point packaging"
+                class="detail-img"
+              />
+            </div>
+          </div>
+
+          <a href="#collection" class="back-link">← Back to collection</a>
+        </article>
+      </section>
+    </main>
+
+    <!-- 7) FOOTER / CONTACT -->
+    <footer class="site-footer" id="contact">
+      <div class="contact-block">
+        <h2 class="contact-title">Commission a build.</h2>
+        <address class="contact-info">
+          <p>Pawleys Island, SC</p>
+          <a href="mailto:studio@tideandgrind.com" class="contact-email"
+            >studio@tideandgrind.com</a
+          >
+        </address>
+        <button class="inquiry-btn">Inquire for Commission</button>
+      </div>
+
+      <div class="footer-legal">
+        <p>&copy; 2026 Tide & Grind. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="wow.js"></script>
+  </body>
+</html>
